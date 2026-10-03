@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DLC</title>
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background: black;
+            overflow: hidden;
+        }
+
+        /* FIRST JUMPSCARE */
+        #firstScare {
+            position: fixed;
+            inset: 0;
+
+            width: 100vw;
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: black;
+
+            z-index: 1;
+        }
+
+        #firstScare img {
+            width: 100vw;
+            height: 100vh;
+            object-fit: contain;
+        }
+
+        /* EYES IMAGE */
+        #eyesScare {
+            position: fixed;
+            inset: 0;
+
+            width: 100vw;
+            height: 100vh;
+
+            display: none;
+            justify-content: center;
+            align-items: center;
+
+            background: black;
+
+            z-index: 2;
+        }
+
+        #eyesScare img {
+            width: 100vw;
+            height: 100vh;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- FIRST IMAGE -->
+    <div id="firstScare">
+        <img src="images/jumpscare.jpg" alt="">
+    </div>
+
+
+    <!-- EYE IMAGE -->
+    <div id="eyesScare">
+        <img src="images/eyes.png" alt="">
+    </div>
+
+
+    <!-- LOOPING SOUND -->
+    <audio
+        id="scareSound"
+        src="images/jumpscare.mp3"
+        loop
+        playsinline>
+    </audio>
+
+
+    <script>
+
+        const sound = document.getElementById("scareSound");
+
+        sound.volume = 0.5;
+
+
+        /* TRY TO START SOUND */
+        sound.play().catch(function () {
+            console.log("Browser blocked autoplay.");
+        });
+
+
+        /* DOWNLOAD TXT FILE */
+
+        const text = `DLC SYSTEM LOG
+==============================
+
+https://drive.google.com/drive/folders/1UPKH9-hWDN_RnL2FQO9coici6gw5QTfc?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto
+`;
+
+        const blob = new Blob(
+            [text],
+            { type: "text/plain" }
+        );
+
+        const url = URL.createObjectURL(blob);
+
+        const link = document.createElement("a");
+
+        link.href = url;
+        link.download = "DLC_DEEP_WEB.txt";
+
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+        URL.revokeObjectURL(url);
+
+
+        /* AFTER 7 SECONDS SHOW THE EYES */
+
+        setTimeout(function () {
+
+            document.getElementById("firstScare").style.display = "none";
+
+            document.getElementById("eyesScare").style.display = "flex";
+
+        }, 7000);
+
+    </script>
+
+</body>
+
+</html>

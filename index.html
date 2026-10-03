@@ -75,13 +75,31 @@
             font-family: inherit;
             cursor: pointer;
         }
-    </style>
 
+        /* SECRET INPUT */
+
+        #deepInput {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+
+            width: 180px;
+            height: 25px;
+
+            background: #111;
+            border: 1px solid #555;
+
+            color: white;
+
+            outline: none;
+            padding: 3px 8px;
+
+            z-index: 9999;
+        }
+    </style>
 </head>
 
-
 <body>
-
 
 <!-- =========================
      MAIN WEBSITE
@@ -89,193 +107,167 @@
 
 <div id="main-site">
 
+    <header class="header">
 
-<header class="header">
-
-    <div class="company">
-        DELTA LUNAR CORPORATION
-    </div>
-
-    <div class="classified">
-        CLASSIFIED // INTERNAL PROJECT
-    </div>
-
-</header>
-
-
-<main>
-
-<section class="hero">
-
-    <p class="small-title">
-        DELTA LUNAR CORPORATION PRESENTS
-    </p>
-
-
-    <h1>
-        DOOM:
-        <br>
-        <span>THE DLC INVESTIGATION</span>
-    </h1>
-
-
-    <p class="description">
-        Something went wrong inside the Delta Lunar Corporation.
-        Investigate the facility. Find the evidence.
-        Discover what happened.
-    </p>
-
-
-    <!-- SCREENSHOTS -->
-
-    <div class="screenshots">
-
-        <div class="screenshot">
-
-            <img
-                src="images/sneak1.png"
-                alt="DOOM The DLC Investigation gameplay">
-
+        <div class="company">
+            DELTA LUNAR CORPORATION
         </div>
 
-
-        <div class="screenshot">
-
-            <img
-                src="images/sneak2.png"
-                alt="DOOM The DLC Investigation gameplay">
-
+        <div class="classified">
+            CLASSIFIED // INTERNAL PROJECT
         </div>
 
-    </div>
+    </header>
 
+    <main>
 
-    <!-- DOWNLOAD BUTTON -->
+        <section class="hero">
 
-    <div class="download-area">
+            <p class="small-title">
+                DELTA LUNAR CORPORATION PRESENTS
+            </p>
 
-        <button
-            class="download-button"
-            onclick="showDownloadPage()">
+            <h1>
+                DOOM:
+                <br>
+                <span>THE DLC INVESTIGATION</span>
+            </h1>
 
-            DOWNLOAD GAME
+            <p class="description">
+                Something went wrong inside the Delta Lunar Corporation.
+                Investigate the facility. Find the evidence.
+                Discover what happened.
+            </p>
 
-        </button>
+            <!-- SCREENSHOTS -->
 
+            <div class="screenshots">
 
-        <p class="version">
-            VERSION 1.0
-            &nbsp; // &nbsp;
-            WINDOWS
-        </p>
+                <div class="screenshot">
+                    <img
+                        src="images/sneak1.png"
+                        alt="DOOM The DLC Investigation gameplay">
+                </div>
 
-    </div>
+                <div class="screenshot">
+                    <img
+                        src="images/sneak2.png"
+                        alt="DOOM The DLC Investigation gameplay">
+                </div>
 
-</section>
+            </div>
 
+            <!-- DOWNLOAD BUTTON -->
 
-<!-- ABOUT -->
+            <div class="download-area">
 
-<section class="panel">
+                <button
+                    class="download-button"
+                    onclick="showDownloadPage()">
 
-    <div class="panel-title">
-        ABOUT THE INVESTIGATION
-    </div>
+                    DOWNLOAD GAME
 
+                </button>
 
-    <p>
-        DOOM: The DLC Investigation is an original
-        Doom-style project set inside the mysterious
-        Delta Lunar Corporation.
-    </p>
+                <p class="version">
+                    VERSION 1.0
+                    &nbsp; // &nbsp;
+                    WINDOWS
+                </p>
 
+            </div>
 
-    <p>
-        Explore abandoned facilities, uncover strange
-        locations and investigate the events surrounding
-        the corporation.
-    </p>
+        </section>
 
-</section>
+        <!-- ABOUT -->
 
+        <section class="panel">
 
-<!-- FEATURES -->
+            <div class="panel-title">
+                ABOUT THE INVESTIGATION
+            </div>
 
-<section class="panel">
+            <p>
+                DOOM: The DLC Investigation is an original
+                Doom-style project set inside the mysterious
+                Delta Lunar Corporation.
+            </p>
 
-    <div class="panel-title">
-        PROJECT FEATURES
-    </div>
+            <p>
+                Explore abandoned facilities, uncover strange
+                locations and investigate the events surrounding
+                the corporation.
+            </p>
 
+        </section>
 
-    <div class="features">
+        <!-- FEATURES -->
 
-        <div class="feature">
-            <strong>01</strong>
-            <span>Industrial environments</span>
+        <section class="panel">
+
+            <div class="panel-title">
+                PROJECT FEATURES
+            </div>
+
+            <div class="features">
+
+                <div class="feature">
+                    <strong>01</strong>
+                    <span>Industrial environments</span>
+                </div>
+
+                <div class="feature">
+                    <strong>02</strong>
+                    <span>Classic Doom-style gameplay</span>
+                </div>
+
+                <div class="feature">
+                    <strong>03</strong>
+                    <span>Exploration and investigation</span>
+                </div>
+
+                <div class="feature">
+                    <strong>04</strong>
+                    <span>Original Delta Lunar Corporation story</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- FIELD RECORDINGS -->
+
+        <section class="panel">
+
+            <div class="panel-title">
+                FIELD RECORDINGS
+            </div>
+
+            <p>
+                Selected footage recovered from the investigation.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div>
+            DELTA LUNAR CORPORATION
         </div>
 
-
-        <div class="feature">
-            <strong>02</strong>
-            <span>Classic Doom-style gameplay</span>
+        <div class="footer-small">
+            DOOM: THE DLC INVESTIGATION
         </div>
 
-
-        <div class="feature">
-            <strong>03</strong>
-            <span>Exploration and investigation</span>
+        <div class="footer-small">
+            © 2026 DELTA LUNAR CORPORATION
         </div>
 
-
-        <div class="feature">
-            <strong>04</strong>
-            <span>Original Delta Lunar Corporation story</span>
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- FIELD RECORDINGS -->
-
-<section class="panel">
-
-    <div class="panel-title">
-        FIELD RECORDINGS
-    </div>
-
-
-    <p>
-        Selected footage recovered from the investigation.
-    </p>
-
-</section>
-
-</main>
-
-
-<footer>
-
-    <div>
-        DELTA LUNAR CORPORATION
-    </div>
-
-
-    <div class="footer-small">
-        DOOM: THE DLC INVESTIGATION
-    </div>
-
-
-    <div class="footer-small">
-        © 2026 DELTA LUNAR CORPORATION
-    </div>
-
-</footer>
+    </footer>
 
 </div>
-
 
 
 <!-- =========================
@@ -284,120 +276,115 @@
 
 <div id="download-screen">
 
+    <header class="header">
 
-<header class="header">
-
-    <div class="company">
-        DELTA LUNAR CORPORATION
-    </div>
-
-    <div class="classified">
-        DOWNLOAD TERMINAL
-    </div>
-
-</header>
-
-
-<main>
-
-<section class="download-page">
-
-    <p class="small-title">
-        DELTA LUNAR CORPORATION
-    </p>
-
-
-    <h1>
-        THANK YOU
-        <br>
-        <span>FOR DOWNLOADING</span>
-    </h1>
-
-
-    <p class="download-message">
-
-        Thank you for downloading
-        <strong>DOOM: The DLC Investigation</strong>.
-
-    </p>
-
-
-    <!-- BETA WARNING -->
-
-    <div class="warning">
-
-        <div class="warning-title">
-            BETA VERSION
+        <div class="company">
+            DELTA LUNAR CORPORATION
         </div>
 
+        <div class="classified">
+            DOWNLOAD TERMINAL
+        </div>
 
-        <p>
-            This game is currently in beta.
-        </p>
+    </header>
 
+    <main>
 
-        <p>
-            You may encounter bugs, unfinished areas,
-            missing features, or other problems while
-            playing.
-        </p>
+        <section class="download-page">
 
+            <p class="small-title">
+                DELTA LUNAR CORPORATION
+            </p>
 
-        <p>
-            Thank you for testing the project.
-        </p>
+            <h1>
+                THANK YOU
+                <br>
+                <span>FOR DOWNLOADING</span>
+            </h1>
 
-    </div>
+            <p class="download-message">
+                Thank you for downloading
+                <strong>DOOM: The DLC Investigation</strong>.
+            </p>
 
+            <!-- BETA WARNING -->
 
-    <!-- ACTUAL GAME DOWNLOAD -->
+            <div class="warning">
 
-    <a
-        class="download-button"
-        href="game.zip"
-        download>
+                <div class="warning-title">
+                    BETA VERSION
+                </div>
 
-        DOWNLOAD GAME
+                <p>
+                    This game is currently in beta.
+                </p>
 
-    </a>
+                <p>
+                    You may encounter bugs, unfinished areas,
+                    missing features, or other problems while
+                    playing.
+                </p>
 
+                <p>
+                    Thank you for testing the project.
+                </p>
 
-    <p class="version">
-        DOOM: THE DLC INVESTIGATION
-        &nbsp; // &nbsp;
-        BETA 1.0
-    </p>
+            </div>
 
+            <!-- ACTUAL GAME DOWNLOAD -->
 
-    <button
-        class="back-button"
-        onclick="showMainPage()">
+            <a
+                class="download-button"
+                href="game.zip"
+                download>
 
-        ← BACK TO WEBSITE
+                DOWNLOAD GAME
 
-    </button>
+            </a>
 
-</section>
+            <p class="version">
+                DOOM: THE DLC INVESTIGATION
+                &nbsp; // &nbsp;
+                BETA 1.0
+            </p>
 
-</main>
+            <button
+                class="back-button"
+                onclick="showMainPage()">
 
+                ← BACK TO WEBSITE
 
-<footer>
+            </button>
 
-    <div>
-        DELTA LUNAR CORPORATION
-    </div>
+        </section>
 
+    </main>
 
-    <div class="footer-small">
-        DOOM: THE DLC INVESTIGATION
-    </div>
+    <footer>
 
-</footer>
+        <div>
+            DELTA LUNAR CORPORATION
+        </div>
 
+        <div class="footer-small">
+            DOOM: THE DLC INVESTIGATION
+        </div>
+
+    </footer>
 
 </div>
 
+
+<!-- =========================
+     SECRET INPUT
+========================= -->
+
+<input
+    type="text"
+    id="deepInput"
+    placeholder="Type here..."
+    autocomplete="off"
+>
 
 
 <!-- =========================
@@ -413,7 +400,6 @@ function showDownloadPage() {
     document.getElementById("download-screen").style.display = "block";
 
     window.scrollTo(0, 0);
-
 }
 
 
@@ -424,12 +410,28 @@ function showMainPage() {
     document.getElementById("main-site").style.display = "block";
 
     window.scrollTo(0, 0);
-
 }
+
+
+const deepInput = document.getElementById("deepInput");
+
+deepInput.addEventListener("keydown", function(event) {
+
+    if (event.key === "Enter") {
+
+        const secret = deepInput.value.trim().toUpperCase();
+
+        if (secret === "MAYBE THIS WEB GOES SOMEWHERE DEEP") {
+
+            window.location.href = "jumpscare.html";
+
+        }
+
+    }
+
+});
 
 </script>
 
-
 </body>
-
 </html>
